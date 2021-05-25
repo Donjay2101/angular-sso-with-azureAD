@@ -53,7 +53,7 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
   return {
     interactionType: InteractionType.Redirect,
     authRequest: {
-      scopes: [`${environment.clientId}/.default`]
+      scopes: ['api://e3f69ac7-305d-42c8-9137-61d25da2daa4/.default' ,'openid', 'offline_access']
     },
   };
 }

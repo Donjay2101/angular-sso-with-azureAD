@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+import {  HTTP_INTERCEPTORS,HttpClientModule } from '@angular/common/http';
 import {
     MSALGuardConfigFactory,
     MSALInstanceFactory,
@@ -37,7 +37,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MsalModule
+    MsalModule,
+    HttpClientModule
   ],
   providers: [
     {
